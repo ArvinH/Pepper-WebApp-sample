@@ -29,7 +29,7 @@ var controller = {
       ALMemory.raiseEvent("jsTriggerEvent");
     });
 
-    session.service("ALMemory").done(function (ALMemory) {
+    this.bw.session.service("ALMemory").done(function (ALMemory) {
       var myData = ALMemory.getData("MyApplication/MyData");
       document.querySelector(".returnData").innerHTML = myData.toString();
     });
