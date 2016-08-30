@@ -17,7 +17,7 @@ triBtn.addEventListener('click', function(event) {
 var controller = {
   bw: {},
   connect: function (ip) {
-    this.bw.session = new QiSession(ip);
+    this.bw.session = new QiSession('10.187.0.199:9559');
     this.bw.session
           .socket()
           .on('connect', function () {
